@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container divHeader">
+            <div class="divLogo">
+                <a href=""><img src="assets/image/logo.png" alt=""></a>
+            </div>
+            <div class="hamburguer">
+                <a href=""><img src="assets/image/hamburguer.png" alt=""></a>
+            </div>
+            <div class="divNav divNavMobile">
+                <ul>
+                    <li> <a href="" class="voltarMobile">❌</a></li>
+                    <li> <a href="" class="navMobileQM">Quem somos</a></li>
+                    <li> <a href="" class="navMobilePM">Promoções</a></li>
+                    <li> <a href="" class="navMobileSA">Sabores</a></li>
+                    <li> <a href="" class="navMobileCO">Contato</a></li>
+                </ul>
+            </div>
+            <div class="divCart">
+                <a href="">                
+                    <div class="divInputCart"><input type="text readonly" placeholder="0"></div>
+                    <img src="assets/image/cart.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="models" style="display: none;">
+        <div class="divPizza">
+            <a href="">
+                <img src="" alt="">
+                <div class="addPizza">+</div>
+            </a>
+            <h3 class="divValor">R$ --</h3>
+            <h1 class="divNomePizza">--</h1>
+            <p class="divDescPizza">--</p>
+        </div>    
+        <div class="nomePizzaCart">
+            <img src="" alt="">
+            <h3>--</h3>
+            <div class="btnCart">
+                <button class="btnMinumCart">-</button>
+                <div class="divQuantCart">1</div>
+                <button class="btnPluseCart">+</button>
+            </div>
+        </div>        
+    </div>    
+    <main>
+        <div class="divMain container">
+            <div class="pizzaArea"></div>
+         </div>
+    </main>
+    <aside>
+        <div class="divWindow" style="display: none;">
+            <div class="divWindowBody">                
+                <div class="divCancelMobile cancelMobile">Voltar</div>
+                <div class="divImgWindow">
+                    <img src="assets/image/pizza.png" alt="">
+                </div>
+                <div class="contentWindow">
+                    <h1>--</h1>
+                    <p>--</p>
+                    <div class="divPizzaSizeWindow">
+                        <h3>Tamanho</h3>
+                        <div class="divBtnSizes">
+                            <div data-size="0" class="pizzaSize sizeP">Pequena <span>--</span></div>
+                            <div data-size="1" class="pizzaSize sizeM">Médio <span>--</span></div>
+                            <div data-size="2" class="pizzaSize sizeG selected">Grande <span>--</span></div>
+                        </div>
+                    </div>
+                    <div class="divPizzaPriceWindow">
+                        <h3>Preço</h3>
+                        <div class="divPriceBtn">
+                            <h3>R$ --</h3>
+                            <button class="btnMinum">-</button>
+                            <div class="divQuant">1</div>
+                            <button class="btnPluse">+</button>
+                        </div>                    
+                    </div>
+                    <div class="btnWindow">
+                        <div class="divAddToCart">Adicionar ao carrinho</div>
+                        <div class="divCancel cancelSite">Cancelar</div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="cart" >
+            <div class="contentCart">                
+                <li> <a href="" class="voltarMobileCart">❌</a></li>
+                <h1>Suas Pizzas</h1>
+                <div class="pizzaPedida"></div>
+                <div class="textoCart subtotal">
+                    <h3 class="h3Texto">Subtotal</h3>
+                    <h3 class="h3Money">R$ 00.00</h3>
+                </div>
+                <div class="textoCart desconto">
+                    <h3 class="h3Texto">Desconto (10%)</h3>
+                    <h3 class="h3Desconto">R$ 00.00</h3>
+                </div>
+                <div class="textoCart total">
+                    <h3 class="h3Total">Total</h3>
+                    <h3 class="h3ValueTotal">R$ 00.00</h3>
+                </div>
+                <div class="btnFinalizar">
+                    Finalizar Compra
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+
+
+
+
+    
+    <script type="text/javascript" src="assets/js/pizzas.js"></script>
+    <script type="text/javascript" src="assets/js/javascript.js"></script>
+
+</body>
+</html>

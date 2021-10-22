@@ -1,0 +1,555 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #EEE;
+}
+ul, li, ol, a{
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+.container{
+    max-width: 80vw;
+    margin: auto;
+}
+header{
+    background-color: #399ade;
+    height: 100px;
+}
+.divHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .divNav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .divNav ul li{
+    color: #FFF;
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+}
+.divCart a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .divLogo img{
+    width: 100px;
+}
+
+header .divCart a img{
+    width: 70px;
+    margin: 10px;
+}
+.divInputCart input{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;    
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+}
+.pizzaArea{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.divPizza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 30px 40px;
+}
+.divPizza a img{
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+    z-index: 0;
+}
+
+.addPizza{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    z-index: 9999;
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: -25px;
+    line-height: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    background-color: #399ade;
+    
+}
+.divPizza a:hover .addPizza{
+    background-color: rgb(34, 78, 112);
+    transition: 0.5s ease;
+}
+.divPizza h1{
+    font-size: 30px;
+    margin: 5px 0px;
+}
+.divPizza p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*CSS PARA WINDOW*/
+
+
+.divWindow{
+    position: fixed;
+    z-index: 999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    top:0;
+    transition: 0.5s ease;
+}
+.divWindowBody{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+}
+.divImgWindow img{
+    width: 380px;
+    margin: 25px 20px;
+}
+.contentWindow{
+    margin: 20px 20px;
+}
+.contentWindow h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.contentWindow p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+    width: 350px;
+}
+.divBtnSizes{
+    display: flex;
+    width: 350px;
+
+}
+.divBtnSizes div{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    width: 140px;
+    height: 40px;
+    background-color: #EEE;
+    cursor: pointer;
+}
+.divBtnSizes .selected{
+    background-color: #399ade;
+    color: white;
+}
+.divBtnSizes .selected span{
+    color: #D6D6D6;
+}
+.divBtnSizes span{
+    font-weight: 400;
+    color: #555;
+    font-size: 12px;
+}
+.divBtnSizes .sizeP{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+}
+.divBtnSizes .sizeG{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.divBtnSizes div:hover{
+    background-color: rgb(177, 177, 177);
+}
+.divBtnSizes .selected:hover{
+    background-color: #399ade;
+}
+.divPizzaPriceWindow{
+    margin-top: 20px;
+}
+.divPizzaPriceWindow h3{    
+    color: #999;
+    font-weight: 600;
+}
+.divPizzaSizeWindow h3{
+    margin-bottom: 10px;
+    color: #999;
+    font-weight: 600;
+}
+.divPriceBtn{
+    display: flex;
+    margin-top: 10px;
+}
+.divPriceBtn h3{
+    font-size: 32px;
+    font-weight: 400;
+    margin-right: 25px;
+    color: #000;
+}
+.btnPluse,
+.btnMinum{
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;    
+    cursor: pointer;
+    background-color: #EEE;
+    border: none;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.btnPluse:hover,
+.btnMinum:hover{
+    background-color: rgb(177, 177, 177);
+    font-weight: bold;
+}
+.divPriceBtn div{
+    margin-top: 5px;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background-color: #EEE;
+    font-weight: 700;
+}
+.divQuant{
+    font-size: 20px;
+    font-weight: 900;
+}
+.btnPluse{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btnMinum{    
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.btnWindow{
+    display: flex;
+    margin: 20px 0px;
+}
+.divAddToCart{
+    padding: 20px 35px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(0, 255, 64);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.divCancel{
+    margin: 20px 50px;
+    cursor: pointer;
+}
+.cancelMobile{
+    display: none;
+}
+.hamburguer{
+    display: none;
+}
+.voltarMobile{
+    display: none;
+}
+.voltarMobileCart{
+    display: none;
+}
+main{
+    width: 100%;
+    transition: 1s ease;
+}
+
+
+
+.cart{
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    background-color: #399ade;
+    z-index: 9999999;    
+    transition: 1s ease;
+}
+.show{
+    right: 0px;
+}
+.showMain{
+    width: 70%;
+}
+.pizzaPedida{
+    width: 100%;
+}
+.contentCart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    padding-top: 40px;
+    width: 100%;
+}
+.contentCart h1{
+    height: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.nomePizzaCart{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.nomePizzaCart img{
+    width: 40px;
+}
+.nomePizzaCart h3{
+    width: 70%;
+    margin-left: 10px;
+    font-weight: 200;
+}
+.btnCart{
+    display: flex;
+}
+.btnCart h3{
+    font-size: 32px;
+    font-weight: 400;
+    margin-right: 25px;
+    color: #000;
+}
+.btnPluseCart,
+.btnMinumCart{
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;    
+    cursor: pointer;
+    background-color: #EEE;
+    border: none;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.btnPluseCart:hover,
+.btnMinumCart:hover{
+    background-color: rgb(177, 177, 177);
+    font-weight: bold;
+}
+.btnCart div{
+    margin-top: 5px;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background-color: #EEE;
+    font-weight: 700;
+}
+.divQuantCart{
+    font-size: 20px;
+    font-weight: 900;
+}
+.btnPluseCart{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btnMinumCart{    
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.textoCart{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid #073a5a;
+    color: #073a5a;
+    font-size: 15px;
+    font-weight: 200;
+}
+.total{
+    color: black;
+    font-weight: 900;
+    font-size: 22px;
+}
+.btnFinalizar{
+    padding: 20px 35px;
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    color: white;
+    background-color: rgb(0, 255, 64);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 800px ){
+    .cart{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: -650px;
+        right: 0px;
+        background-color: #399ade;
+        z-index: 9999999;    
+        transition: 1s ease;
+    }
+    header{
+        position: fixed;
+        width: 100%;    
+        top: 0;
+        z-index: 999999;
+    }
+    main{
+        margin-top: 100px;
+    }
+    .show{
+        top: -650px;
+        right: 0px;
+    }
+    .showCart{
+        top: 0px;
+    }
+    .showMain{
+        width: 100%;
+    }
+    .divWindow{
+        align-items: flex-start;
+        width: 100%;
+        overflow: auto;
+        height: 100%;
+    }
+    .divWindowBody{
+        padding-top: 20px;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;    
+        align-items: center;
+    }
+    .cancelSite{
+        display: none;
+    }
+    .cancelMobile{
+        display: flex;
+        font-size: 25px;
+    }
+    .divAddToCart{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .divPriceBtn{
+        justify-content: center;
+    }
+    .divPizzaPriceWindow h3{
+        text-align: center;
+    }
+    .divPizzaSizeWindow h3{
+        text-align: center;
+    }
+    .contentWindow h1{
+        text-align: center;
+    }
+    .divImgWindow img{
+        width: 300px;
+    }
+    .contentWindow p{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 280px;
+    }
+    .divNav{
+        display: none;
+    }
+    header .divCart a img{
+        width: 40px;
+    }
+    .divCart a{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .container{
+        max-width: 100vw;
+        margin: 0px 10px;
+    }
+    .divHeader{
+        justify-content: space-between;
+    }
+    .divInputCart input{
+        width: 50px;
+    }
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer a img{
+        width: 50px;
+    }
+    .voltarMobile{
+        display: block;
+    }
+    .voltarMobileCart{
+        display: block;
+        margin-left: 600%;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .divNavMobile{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #399ade;
+        opacity: 0.95;
+        width: 100%;
+        height: 100vh;
+        top: -670px;
+        right: 0;
+        z-index: 9999999;
+        padding-top: 20px;
+        overflow: auto;
+        transition: 1s ease;
+    }
+    header .divNav ul{
+        flex-direction: column;
+    }
+    header .divLogo img{
+        width: 85px;
+    }
+}
