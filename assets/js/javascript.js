@@ -18,7 +18,7 @@ document.querySelector('.hamburguer a').addEventListener('click',(e)=>{
 });
 document.querySelector('.voltarMobile').addEventListener('click',(e)=>{
     e.preventDefault();     
-    document.querySelector('.divNav').style.top = '-670px';
+    document.querySelector('.divNav').style.top = '-110%';
 });
 document.querySelector('.navMobileQM').addEventListener('click',(e)=>{
     e.preventDefault();
